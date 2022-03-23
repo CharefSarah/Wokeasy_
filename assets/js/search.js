@@ -914,6 +914,12 @@ function openPage() {
     if (x === "ui") {
       window.location.href = "webdesign.html#UIUX";
     }
+    if (x === "ui ux") {
+      window.location.href = "webdesign.html#UIUX";
+    }
+    if (x === "ux ui") {
+      window.location.href = "webdesign.html#UIUX";
+    }
     if (x === "design") {
       window.location.href = "webdesign.html#UIUX";
     }

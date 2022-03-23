@@ -141,7 +141,6 @@ input[type="search"]::-webkit-search-results-decoration {
     transition: opacity 500ms;
     opacity: 1;
     z-index: 9999;
-    display: none;
 
 }
 
@@ -151,7 +150,14 @@ h3 {
     font-stretch: expanded !important;
 }
 
-.box {}
+.mention{
+    padding-inline: var(--spacer_3);
+    padding-bottom: var(--spacer_3);
+}
+.mention p{
+    max-width: 100%;
+}
+
 
 .overlay:target {
     visibility: visible;
@@ -189,7 +195,7 @@ h3 {
     right: 0px;
     left: 0;
     box-shadow: 0px 20px var(--spacer_1) rgba(20, 0, 0, 0.25);
-    display: none;
+ 
 
 
 }

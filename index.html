@@ -20,7 +20,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
 </head>
-<body id="body">
+
+<body id="body" onload="Modal()">
 
 
 
@@ -299,7 +300,7 @@
             <div class="footer_links">
                 <ul>
                     <h2>Liens utiles</h2>
-                    <li><a href="#" class="footer_nav_link">Mentions légales</a></li>
+                    <li><a href="mentions.html" class="footer_nav_link">Mentions légales</a></li>
                     <li><a href="#" class="footer_nav_link">Charte de confidentialité</a></li>
                     <li><a href="#" class="footer_nav_link">Contacts</a></li>
 
@@ -385,8 +386,6 @@
                 document.getElementById("pop").classList.add("bye");
                 document.getElementById("popup1").classList.add("bye");
                 document.getElementById("body").style.overflow = "auto";
-
-
 
             }
         };
