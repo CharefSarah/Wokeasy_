@@ -1243,3 +1243,71 @@ footer {
     padding-top: 10px;
 
 }
+
+.emoji {
+    font-size: 20px;
+    text-align: center;
+}
+
+.emoji::after {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.camera::after {
+    content: '📷';
+    --emoji: '📸';
+    animation-name: twoFrames;
+    animation-duration: 1.2s;
+}
+
+
+.letter::after {
+    content: '💌';
+    --emoji-1: '📩';
+    --emoji-2: '📨';
+    animation-name: threeFrames;
+    animation-duration: 1.5s;
+}
+.smile::after {
+    content: '🙂';
+    --emoji-0: '😃';
+    --emoji-1: '😄';
+    --emoji-2: '😍';
+    animation-name: forFrames;
+    animation-duration: 2.3s;
+}
+
+
+
+
+@keyframes twoFrames {
+    50% {
+        content: var(--emoji);
+    }
+}
+
+@keyframes threeFrames {
+    33.333% {
+        content: var(--emoji-1);
+    }
+
+    66.666% {
+        content: var(--emoji-2);
+    }
+}
+
+
+@keyframes forFrames {
+    11.111% {
+        content: var(--emoji-0);
+    }
+
+    33.333% {
+        content: var(--emoji-1);
+    }
+
+    66.666% {
+        content: var(--emoji-2);
+    }
+}
